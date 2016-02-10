@@ -9,7 +9,7 @@ resources:
     type: cf
     source:
       api: https://api.run.pivotal.io
-      username:
+      username: 
       password:
       organization:
       space:
@@ -32,4 +32,5 @@ jobs:
         file: pipelines/pipelines/jvm-test-deploy-pws/tasks/package.yml
       - put: pws
         params:
-          manifest: package/pipelines/pipelines/jvm-test-deploy-pws/app/manifest.yml
+          manifest: package/manifest.yml
+          path: package/app.zip
