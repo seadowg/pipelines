@@ -1,0 +1,13 @@
+resources:
+  - name: pipelines
+    type: git
+    source:
+      uri: https://github.com/seadowg/pipelines.git
+      branch: master
+
+jobs:
+  - name: pipelines
+    plan:
+      - get: pipelines
+      - task: test
+        file: pipelines/pipelines/jvm-test-deploy-pws/tasks/test.yml
