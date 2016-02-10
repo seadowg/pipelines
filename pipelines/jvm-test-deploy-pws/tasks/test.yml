@@ -3,7 +3,7 @@ platform: linux
 image: docker:///java#8
 
 inputs:
-  - name: pipelines
+  - name: github
 
 run:
   path: pipelines/pipelines/jvm-test-deploy-pws/scripts/test.sh
