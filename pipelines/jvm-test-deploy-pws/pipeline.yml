@@ -26,6 +26,7 @@ jobs:
   - name: deploy
     plan:
       - get: pipelines
+        trigger: true
         passed: [test]
       - task: package
         file: pipelines/pipelines/jvm-test-deploy-pws/tasks/package.yml
