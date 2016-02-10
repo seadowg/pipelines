@@ -32,4 +32,4 @@ jobs:
         file: pipelines/pipelines/jvm-test-deploy-pws/tasks/package.yml
       - put: pws
         params:
-          manifest: pipelines/pipelines/jvm-test-deploy-pws/app/manifest.yml
+          manifest: package/pipelines/pipelines/jvm-test-deploy-pws/app/manifest.yml
