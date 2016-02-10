@@ -3,9 +3,9 @@
 set -e
 export TERM=dumb # needed for Gradle: https://issues.gradle.org/browse/GRADLE-2634
 
-pushd pipelines/pipelines/jvm-test-deploy-pws/app
+export TASK_HOME=pwd
 ./gradlew distZip
-popd
+cd $TASK_HOME
 
 cp pipelines/pipelines/jvm-test-deploy-pws/app/manifest.yml package/manifest.yml
 cp pipelines/pipelines/jvm-test-deploy-pws/app/build/distributions/app.zip package/app.zip
