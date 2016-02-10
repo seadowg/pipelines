@@ -5,6 +5,16 @@ resources:
       uri: https://github.com/seadowg/pipelines.git
       branch: master
 
+  - name: pws
+    type: cf
+    source:
+      api:
+      username:
+      password:
+      organization:
+      space:
+      skip_cert_check: false
+
 jobs:
   - name: test
     plan:
@@ -12,3 +22,13 @@ jobs:
         trigger: true
       - task: test
         file: pipelines/pipelines/jvm-test-deploy-pws/tasks/test.yml
+
+  - name: deploy
+    plan:
+      - get: pipelines
+        passed: [test]
+      - task: package
+        file: pipelines/pipelines/jvm-test-deploy-pws/tasks/package.yml
+      - put: pws
+        params:
+          manifest: pipelines/pipelines/jvm-test-deploy-pws/app/manifest.yml

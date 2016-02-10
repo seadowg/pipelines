@@ -1,0 +1,9 @@
+platform: linux
+
+image: docker:///java#8
+
+inputs:
+  - name: pipelines
+
+run:
+  path: pipelines/pipelines/jvm-test-deploy-pws/scripts/package.sh
