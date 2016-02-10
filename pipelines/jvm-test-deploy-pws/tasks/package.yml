@@ -9,4 +9,4 @@ outputs:
   - name: package
 
 run:
-  path: pipelines/pipelines/jvm-test-deploy-pws/scripts/package.sh
+  path: github/pipelines/jvm-test-deploy-pws/scripts/package.sh

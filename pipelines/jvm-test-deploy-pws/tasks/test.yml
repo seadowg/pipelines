@@ -6,4 +6,4 @@ inputs:
   - name: github
 
 run:
-  path: pipelines/pipelines/jvm-test-deploy-pws/scripts/test.sh
+  path: github/pipelines/jvm-test-deploy-pws/scripts/test.sh
