@@ -9,5 +9,6 @@ jobs:
   - name: test
     plan:
       - get: pipelines
+        trigger: true
       - task: test
         file: pipelines/pipelines/jvm-test-deploy-pws/tasks/test.yml

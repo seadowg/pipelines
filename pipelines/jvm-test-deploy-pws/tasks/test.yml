@@ -6,4 +6,4 @@ inputs:
   - name: pipelines
 
 run:
-  path: pipelines/pipelines/jvm-test-deploy-pws/test.sh
+  path: pipelines/pipelines/jvm-test-deploy-pws/scripts/test.sh
