@@ -6,7 +6,7 @@ resources:
       branch: master
 
 jobs:
-  - name: pipelines
+  - name: test
     plan:
       - get: pipelines
       - task: test
