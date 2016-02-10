@@ -1,4 +1,6 @@
 #!/bin/sh
 
-cd pipelines/piplines/jvm-test-deploy-pws/app
+set -e
+
+cd pipelines/pipelines/jvm-test-deploy-pws/app
 ./gradlew test
