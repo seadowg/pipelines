@@ -1,2 +1,3 @@
 name: app
 random-route: true
+path: build/distributions/app.zip
