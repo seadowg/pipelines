@@ -3,7 +3,6 @@
 set -e
 
 vagrant up
-sleep 10
 
 until ./fly sync
 do
