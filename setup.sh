@@ -13,4 +13,4 @@ echo y | ./fly set-pipeline -p jvm-test-deploy-pws -c pipelines/jvm-test-deploy-
 
 echo ""
 echo ""
-echo "Everything is booted up! Visit 192.168.100.4:8080 to view Concourse."
+echo "Everything is booted up! Visit http://192.168.100.4:8080 to view Concourse."
