@@ -33,4 +33,3 @@ jobs:
       - put: pws
         params:
           manifest: package/manifest.yml
-          path: package/app.zip
