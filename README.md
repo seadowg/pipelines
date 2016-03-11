@@ -30,3 +30,9 @@ This pipeline will deploy the app [PWS](https://run.pivotal.io) but it requires 
 ```
 
 You can also point the deployment at a different CF installation if you wish by editing the `api` field of the `source` node in the `pws` resource.
+
+## Pipeline ideas
+
+* Mobile app with hockey/s3 push
+* Web app with external db/redis etc
+* Multiapp web app deploy
