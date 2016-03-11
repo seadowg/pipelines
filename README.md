@@ -14,7 +14,7 @@ This will boot a Vagrant managed virtual machine running Concourse and add all t
 
 Some pipelines will require a little extra configuration to fully work. Steps to achieve this are detailed below in each pipelines description.
 
-** Hint **: `setup.sh` is idempotent so you can re-run it after
+**Hint**: `setup.sh` is idempotent so you can re-run it after
 changing any of the `pipeline.yml` files to quickly reconfigure everything.
 
 ## Pipelines
